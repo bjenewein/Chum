@@ -105,10 +105,10 @@ RS_tseries <- ts(run_n_exp$residuals, start = c(1980, 1), frequency = 1)
 print(RS_tseries)
 plot(RS_tseries,main="Annual Residuals",bty="l")
 
-mvalue = cpt.mean(RS_tseries[-32], method="PELT") #mean changepoints using PELT
+mvalue = cpt.mean(RS_tseries, method="PELT") #mean changepoints using PELT
 cpts(mvalue)
 
-mvalue = cpt.mean(RS_tseries[-32], method="BinSeg")
+mvalue = cpt.mean(RS_tseries, method="BinSeg")
 cpts(mvalue)
 
 #This didn't really result in anything - wondering if it works very well with negative values?
