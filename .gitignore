@@ -1,0 +1,25 @@
+*.aux
+*.bbl
+*.blg
+*~*
+*.dvi
+*.log
+*.lot
+*.pdf
+*.ps
+*.toc
+# *.txt
+*.out
+*.snm
+*.nav
+*.synctex.gz*
+knitr-cache
+.RData
+.RHistory
+.DS_Store
+directories.R
+myNotes.*
+.Rproj.user
+.Rapp.history
+*.doc
+*.docx
